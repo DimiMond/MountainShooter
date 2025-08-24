@@ -39,7 +39,7 @@ class Level:
         pygame.time.set_timer(EVENT_TIMEOUT, TIMEOUT_STEP)  # 100ms
 
     def run(self, player_score: list[int]):
-        # Caminho absoluto para a música
+        # Caminho para a música
         music_path = os.path.join(BASE_PATH, '../asset', f'{self.name}.mp3')
         pygame.mixer_music.load(music_path)
         pygame.mixer_music.set_volume(0.3)

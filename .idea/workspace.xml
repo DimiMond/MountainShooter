@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls">
-      <change beforePath="$PROJECT_DIR$/asset/Free-Mountain-Backgrounds-Pixel-Art3.png" beforeDir="false" />
+    <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls. atualized">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,7 @@
   "keyToString": {
     "Python.Background.executor": "Run",
     "Python.Entity.executor": "Run",
+    "Python.EntityFactory.executor": "Run",
     "Python.Game.executor": "Run",
     "Python.Main.executor": "Run",
     "Python.Menu.executor": "Run",
@@ -38,7 +43,8 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/dimi2/PycharmProjects/MountainShooter/venv/MountainShooter/Code"
+    "last_opened_file_path": "C:/Users/dimi2/PycharmProjects/MountainShooter/venv/MountainShooter/Code",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -76,11 +82,20 @@
       <option name="project" value="LOCAL" />
       <updated>1756058299356</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add the moduls. atualized">
+      <option name="closed" value="true" />
+      <created>1756061274400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756061274400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add the moduls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the moduls" />
+    <MESSAGE value="Add the moduls. atualized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the moduls. atualized" />
   </component>
 </project>

@@ -1,5 +1,4 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+
 import os
 from abc import ABC, abstractmethod
 
@@ -15,7 +14,7 @@ class Entity(ABC):
     def __init__(self, name: str, position: tuple):
         self.name = name
 
-        # Caminho absoluto para a imagem
+        # Caminho para a imagem
         img_path = os.path.join(BASE_PATH, '../asset', name + '.png')
         self.surf = pygame.image.load(img_path).convert_alpha()
 
