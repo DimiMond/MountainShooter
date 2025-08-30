@@ -4,42 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls. atualized 2">
-      <change afterPath="$PROJECT_DIR$/asset/BGmenu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/BGscore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/Enemy3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/python.py" afterDir="false" />
+    <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls. atualized 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Enemy1.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Enemy1Shot.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy1Shot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Enemy2.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Enemy2Shot.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Enemy2Shot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg0.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg4.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg5.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg6.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level1Bg6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level2Bg0.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level2Bg0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level2Bg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level2Bg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level2Bg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level2Bg2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level2Bg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level2Bg3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level2Bg4.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Level2Bg4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/MenuBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/MenuBg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Player1.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Player1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Player1Shot.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Player1Shot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Player2.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Player2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Player2Shot.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/Player2Shot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ScoreBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ScoreBg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Background.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Background.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/EntityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/python.py" beforeDir="false" afterPath="$PROJECT_DIR$/python.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/EntityMediator.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityMediator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Score.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/PlayerShot.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/PlayerShot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,13 +111,22 @@
       <option name="project" value="LOCAL" />
       <updated>1756070341753</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add the moduls. atualized 3">
+      <option name="closed" value="true" />
+      <created>1756565871955</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756565871955</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add the moduls" />
     <MESSAGE value="Add the moduls. atualized" />
     <MESSAGE value="Add the moduls. atualized 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the moduls. atualized 2" />
+    <MESSAGE value="Add the moduls. atualized 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the moduls. atualized 3" />
   </component>
 </project>
