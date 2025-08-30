@@ -19,7 +19,7 @@ BASE_PATH = os.path.dirname(__file__)
 class Score:
     def __init__(self, window: Surface):
         self.window = window
-        img_path = os.path.join(BASE_PATH, '../asset/ScoreBg.png')
+        img_path = os.path.join(BASE_PATH, '../asset/BGscore.png')
         self.surf = pygame.image.load(img_path).convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 

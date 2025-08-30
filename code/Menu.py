@@ -15,7 +15,7 @@ class Menu:
         self.window = window
 
         # Caminho para a imagem de fundo
-        img_path = os.path.join(BASE_PATH, '../asset/MenuBg.png')
+        img_path = os.path.join(BASE_PATH, '../asset/BGmenu.png')
         self.surf = pygame.image.load(img_path).convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
