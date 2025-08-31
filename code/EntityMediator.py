@@ -93,7 +93,7 @@ class EntityMediator:
 
     @staticmethod
     def __verify_collision_window(ent: Entity):
-        # Saiu da janela → mata a entidade
+        # Saiu da janela, mata o enimigo
         if isinstance(ent, Enemy):
             if ent.rect.right <= 0:
                 ent.health = 0
