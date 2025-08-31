@@ -1,4 +1,3 @@
-
 import os
 import pygame.image
 from pygame import Surface, Rect
@@ -6,9 +5,9 @@ from pygame.font import Font
 
 from code.Const import WIN_WIDTH, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW, C_GREEN
 
-
 # Caminho base: pasta onde este arquivo está
 BASE_PATH = os.path.dirname(__file__)
+
 
 class Menu:
     def __init__(self, window):
@@ -43,8 +42,8 @@ class Menu:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-                    quit() # Evento para fechar o jogo
-                if event.type == pygame.KEYDOWN: # Ativando o teclado
+                    quit()  # Evento para fechar o jogo
+                if event.type == pygame.KEYDOWN:  # Ativando o teclado
                     if event.key == pygame.K_DOWN:
                         if menu_option < len(MENU_OPTION) - 1:
                             menu_option += 1
