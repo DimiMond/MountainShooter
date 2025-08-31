@@ -1,12 +1,23 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-"""''''''
+
 import pygame.key
+import pygame.mixer
+import os
 
 from code.Const import ENTITY_SPEED, WIN_HEIGHT, WIN_WIDTH, PLAYER_KEY_UP, PLAYER_KEY_DOWN, PLAYER_KEY_LEFT, \
     PLAYER_KEY_RIGHT, PLAYER_KEY_SHOOT, ENTITY_SHOT_DELAY
 from code.Entity import Entity
 from code.PlayerShot import PlayerShot
+
+# Inicializa o mixer (caso ainda não tenha sido feito no código principal)
+pygame.mixer.init()
+
+# Caminho absoluto para o som do tiro
+base_path = os.path.dirname(os.path.abspath(__file__))
+sound_path = os.path.join(base_path, "..", "asset", "Shot.mp3")
+tiro_sound = pygame.mixer.Sound(sound_path)
+tiro_sound.set_volume(0.05)  # volume entre 0.0 (mudo) e 1.0 (máximo)
 
 
 class Player(Entity):
@@ -16,28 +27,32 @@ class Player(Entity):
 
     def move(self):
         pressed_key = pygame.key.get_pressed()
+        speed = ENTITY_SPEED[self.name]
+
         if pressed_key[PLAYER_KEY_UP[self.name]] and self.rect.top > 0:
-            self.rect.centery -= ENTITY_SPEED[self.name]
+            self.rect.centery -= speed
         if pressed_key[PLAYER_KEY_DOWN[self.name]] and self.rect.bottom < WIN_HEIGHT:
-            self.rect.centery += ENTITY_SPEED[self.name]
+            self.rect.centery += speed
         if pressed_key[PLAYER_KEY_LEFT[self.name]] and self.rect.left > 0:
-            self.rect.centerx -= ENTITY_SPEED[self.name]
+            self.rect.centerx -= speed
         if pressed_key[PLAYER_KEY_RIGHT[self.name]] and self.rect.right < WIN_WIDTH:
-            self.rect.centerx += ENTITY_SPEED[self.name]
-        pass
+            self.rect.centerx += speed
+
+        if self.shot_delay > 0:
+            self.shot_delay -= 1
 
     def shoot(self):
-        self.shot_delay -= 1
-        if self.shot_delay == 0:
+        pressed_key = pygame.key.get_pressed()
+        if pressed_key[PLAYER_KEY_SHOOT[self.name]] and self.shot_delay <= 0:
             self.shot_delay = ENTITY_SHOT_DELAY[self.name]
-            pressed_key = pygame.key.get_pressed()
-            if pressed_key[PLAYER_KEY_SHOOT[self.name]]:
-                return PlayerShot(name=f'{self.name}Shot', position=(self.rect.centerx, self.rect.centery))
-            else:
-                return None
-        else:
-            return None ''''''"""
+            spawn_pos = (self.rect.right, self.rect.centery)
+            tiro = PlayerShot(name=f'{self.name}Shot', position=spawn_pos)
+            tiro_sound.play()  # 🔊 toca o som do tiro
+            return tiro
+        return None
 
+
+'''''''''
 import pygame.key
 
 from code.Const import ENTITY_SPEED, WIN_HEIGHT, WIN_WIDTH, PLAYER_KEY_UP, PLAYER_KEY_DOWN, PLAYER_KEY_LEFT, \
@@ -77,4 +92,4 @@ class Player(Entity):
             # spawn na borda direita da nave
             spawn_pos = (self.rect.right, self.rect.centery)
             return PlayerShot(name=f'{self.name}Shot', position=spawn_pos)
-        return None
+        return None '''''''''

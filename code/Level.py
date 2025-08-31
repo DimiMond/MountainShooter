@@ -161,7 +161,7 @@ class Level:
                                 player_score[1] = ent.score
                         return True
 
-            # Update e geração de tiros
+            # geração de tiros
             for ent in self.entity_list:
                 ent.move()
                 if isinstance(ent, (Player, Enemy)):
@@ -173,7 +173,6 @@ class Level:
             EntityMediator.verify_collision(entity_list=self.entity_list)
             EntityMediator.verify_health(entity_list=self.entity_list)
 
-            # Anexa novas entidades do frame
             self.entity_list.extend(new_entities)
 
             # Fim se não houver jogador
