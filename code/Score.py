@@ -8,25 +8,34 @@ from pygame.font import Font
 from pygame.locals import KEYDOWN, K_RETURN, K_BACKSPACE, K_ESCAPE
 from datetime import datetime
 
-# IMPORTAÇÕES FALTANTES
 from code.DBProxy import DBProxy
 from code.Const import C_YELLOW, C_WHITE, SCORE_POS, MENU_OPTION
 
-# Caminho base: pasta onde este arquivo está
-BASE_PATH = os.path.dirname(__file__)
+# Caminho base absoluto
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 
 class Score:
     def __init__(self, window: Surface):
         self.window = window
-        img_path = os.path.join(BASE_PATH, '../asset/BGscore.png')
-        self.surf = pygame.image.load(img_path).convert_alpha()
+
+        try:
+            img_path = os.path.normpath(os.path.join(BASE_PATH, "..", "asset", "BGscore.png"))
+            self.surf = pygame.image.load(img_path).convert_alpha()
+        except Exception as e:
+            print(f"[AVISO] Não foi possível carregar a imagem BGscore.png: {e}")
+            self.surf = Surface((800, 600))  # fallback genérico
+            self.surf.fill((0, 0, 0))  # fundo preto
+
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def save(self, game_mode: str, player_score: list[int]):
-        music_path = os.path.join(BASE_PATH, '../asset/Score.mp3')
-        pygame.mixer_music.load(music_path)
-        pygame.mixer_music.play(-1)
+        music_path = os.path.normpath(os.path.join(BASE_PATH, "..", "asset", "Score.mp3"))
+        try:
+            pygame.mixer_music.load(music_path)
+            pygame.mixer_music.play(-1)
+        except Exception as e:
+            print(f"[AVISO] Não foi possível carregar a música Score.mp3: {e}")
 
         db_proxy = DBProxy('DBScore')
         name = ''
@@ -40,10 +49,10 @@ class Score:
 
             if game_mode == MENU_OPTION[0]:
                 score = player_score[0]
-            if game_mode == MENU_OPTION[1]:
+            elif game_mode == MENU_OPTION[1]:
                 score = (player_score[0] + player_score[1]) / 2
                 text = 'Enter Team name (4 characters):'
-            if game_mode == MENU_OPTION[2]:
+            elif game_mode == MENU_OPTION[2]:
                 if player_score[0] >= player_score[1]:
                     score = player_score[0]
                 else:
@@ -71,9 +80,12 @@ class Score:
             pygame.display.flip()
 
     def show(self):
-        music_path = os.path.join(BASE_PATH, '../asset/Score.mp3')
-        pygame.mixer_music.load(music_path)
-        pygame.mixer_music.play(-1)
+        music_path = os.path.normpath(os.path.join(BASE_PATH, "..", "asset", "Score.mp3"))
+        try:
+            pygame.mixer_music.load(music_path)
+            pygame.mixer_music.play(-1)
+        except Exception as e:
+            print(f"[AVISO] Não foi possível carregar a música Score.mp3: {e}")
 
         self.window.blit(source=self.surf, dest=self.rect)
         self.score_text(48, 'TOP 10 SCORE', C_YELLOW, SCORE_POS['Title'])
@@ -83,10 +95,9 @@ class Score:
         list_score = db_proxy.retrieve_top10()
         db_proxy.close()
 
-        for player_score in list_score:
+        for index, player_score in enumerate(list_score):
             id_, name, score, date = player_score
-            self.score_text(20, f'{name}     {score:05d}     {date}', C_YELLOW,
-                            SCORE_POS[list_score.index(player_score)])
+            self.score_text(20, f'{name}     {score:05d}     {date}', C_YELLOW, SCORE_POS[index])
 
         while True:
             for event in pygame.event.get():

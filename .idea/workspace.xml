@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls. atualized">
+      <change afterPath="$PROJECT_DIR$/DBScore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/asset/BGmenu.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/asset/BGscore.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/asset/Enemy1.png" afterDir="false" />
@@ -463,6 +464,9 @@
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/main.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/python312.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Score.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Score.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -617,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756682327716</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add the moduls. atualized">
+      <option name="closed" value="true" />
+      <created>1756685312045</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756685312045</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
