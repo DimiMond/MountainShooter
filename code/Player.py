@@ -4,13 +4,14 @@
 import pygame.key
 import pygame.mixer
 import os
+import pygame
 
 from code.Const import ENTITY_SPEED, WIN_HEIGHT, WIN_WIDTH, PLAYER_KEY_UP, PLAYER_KEY_DOWN, PLAYER_KEY_LEFT, \
     PLAYER_KEY_RIGHT, PLAYER_KEY_SHOOT, ENTITY_SHOT_DELAY
 from code.Entity import Entity
 from code.PlayerShot import PlayerShot
 
-# Inicializa o mixer (caso ainda não tenha sido feito no código principal)
+# Inicializa o mixer
 pygame.mixer.init()
 
 # Caminho absoluto para o som do tiro

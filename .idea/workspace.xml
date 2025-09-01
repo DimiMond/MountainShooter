@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls. atualized 6">
+    <list default="true" id="8fe7a7e9-0ea8-4383-b3a7-1dacc195fafa" name="Changes" comment="Add the moduls. atualized">
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/asset/BGmenu.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/asset/BGscore.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/asset/Enemy1.png" afterDir="false" />
@@ -463,10 +463,6 @@
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/main.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build/exe.win-amd64-3.12/python312.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg0 - Copia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Level1Bg6 - Copia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/MenuBg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ScoreBg.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -613,18 +609,26 @@
       <option name="project" value="LOCAL" />
       <updated>1756680943168</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add the moduls. atualized">
+      <option name="closed" value="true" />
+      <created>1756682327716</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756682327716</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add the moduls" />
-    <MESSAGE value="Add the moduls. atualized" />
     <MESSAGE value="Add the moduls. atualized 2" />
     <MESSAGE value="Add the moduls. atualized 3" />
     <MESSAGE value="Add the moduls. atualized 4" />
     <MESSAGE value="Add the moduls. atualized 5" />
     <MESSAGE value="Add the moduls. atualized 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the moduls. atualized 6" />
+    <MESSAGE value="Add the moduls. atualized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the moduls. atualized" />
   </component>
 </project>
